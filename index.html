@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Juab County Water Supply Plan — Community Water Values</title>
+<meta name="description" content="Reporting what East Juab County residents, farmers, and water users value about their water future. Part of the Juab County Water Supply Plan." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Public+Sans:wght@400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ambient canal line -->
+<div class="canal" aria-hidden="true"></div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-txt">Juab&nbsp;County<br /><strong>Water Supply Plan</strong></span>
+    </div>
+    <nav class="nav" aria-label="Primary">
+      <a href="#values">Values</a>
+      <a href="#results">Results</a>
+      <a href="#supply">The Supply</a>
+      <a href="#participate">Participate</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ─────────────── HERO ─────────────── -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">East Juab County · A Community Water Conversation</p>
+        <h1>The water we share is the future we&nbsp;plan&nbsp;together.</h1>
+        <p class="lede">
+          Nephi, Mona, and the farms and families of East Juab County are shaping a plan
+          for the next 75&nbsp;years of water. This is where we listen &mdash; and report
+          back what the community tells us it values most.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#results">See what people said</a>
+          <a class="btn btn-ghost" href="#participate">Add your voice</a>
+        </div>
+      </div>
+
+      <!-- SIGNATURE ELEMENT: supply vs demand water column -->
+      <figure class="supply-viz" aria-label="Illustration of water supply meeting future demand">
+        <div class="viz-frame">
+          <div class="viz-label viz-label-top"><span>Projected demand</span><span>2100</span></div>
+          <div class="water">
+            <div class="water-fill" id="waterFill"></div>
+            <div class="new-supply" id="newSupply">
+              <span class="ns-tag">Highline Canal<br />new supply</span>
+            </div>
+          </div>
+          <div class="viz-label viz-label-bot"><span>Supply today</span><span>2026</span></div>
+        </div>
+        <figcaption>An added <strong>8,000 acre-feet</strong> of conserved water is the
+          foundation of the plan &mdash; but how we use it is the community&rsquo;s decision.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ─────────────── VALUES ─────────────── -->
+  <section id="values" class="band band-sage">
+    <div class="wrap">
+      <p class="section-eyebrow">Why values come first</p>
+      <h2 class="section-title">Surveys tell us what people prefer.<br />Values tell us <em>why</em>.</h2>
+      <p class="section-lede">
+        Following the approach pioneered by Envision Utah&rsquo;s statewide Water Values Study,
+        we start by understanding the beliefs beneath the preferences. That&rsquo;s what lets a
+        plan hold up across decades of change. Here is what we are listening for in East Juab County.
+      </p>
+
+      <div class="value-grid">
+        <article class="value-card">
+          <span class="vc-num">01</span>
+          <h3>Reliable water</h3>
+          <p>A supply families and farms can count on, in wet years and dry.</p>
+        </article>
+        <article class="value-card">
+          <span class="vc-num">02</span>
+          <h3>A working agriculture</h3>
+          <p>Keeping a vibrant farming community as growth arrives from the north.</p>
+        </article>
+        <article class="value-card">
+          <span class="vc-num">03</span>
+          <h3>Affordable for families</h3>
+          <p>Water that stays within reach as new infrastructure is built.</p>
+        </article>
+        <article class="value-card">
+          <span class="vc-num">04</span>
+          <h3>Responsible growth</h3>
+          <p>Growth that matches what our water can actually support.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────── RESULTS DASHBOARD ─────────────── -->
+  <section id="results" class="band">
+    <div class="wrap">
+      <p class="section-eyebrow">Live results · Updated as surveys close</p>
+      <h2 class="section-title">What East Juab County is telling us</h2>
+      <p class="section-lede">
+        Results are shown in aggregate to protect every respondent&rsquo;s privacy. Priority
+        groups &mdash; irrigation companies and large agricultural users &mdash; are surveyed
+        directly and reported here only as combined totals. <strong>The figures below are
+        illustrative placeholders</strong> until the first survey window closes.
+      </p>
+
+      <div class="dash">
+        <!-- stat cards -->
+        <div class="stat-row">
+          <div class="stat">
+            <span class="stat-num" data-count="0">0</span>
+            <span class="stat-lbl">responses collected</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="0">0</span>
+            <span class="stat-lbl">stakeholder groups engaged</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="0">0</span>
+            <span class="stat-lbl">in-person events attended</span>
+          </div>
+        </div>
+
+        <!-- top concerns bar chart -->
+        <div class="panel">
+          <h3 class="panel-title">Top water concerns</h3>
+          <p class="panel-sub">&ldquo;When you think about our water future, how concerned are you about&hellip;&rdquo;</p>
+          <ul class="barlist" id="concerns">
+            <li><span class="bl-label">Growth outpacing supply</span><span class="bl-track"><span class="bl-fill" style="--v:0%"></span></span><span class="bl-val">&mdash;</span></li>
+            <li><span class="bl-label">Loss of local farms</span><span class="bl-track"><span class="bl-fill" style="--v:0%"></span></span><span class="bl-val">&mdash;</span></li>
+            <li><span class="bl-label">Water becoming too costly</span><span class="bl-track"><span class="bl-fill" style="--v:0%"></span></span><span class="bl-val">&mdash;</span></li>
+            <li><span class="bl-label">Running out of drinking water</span><span class="bl-track"><span class="bl-fill" style="--v:0%"></span></span><span class="bl-val">&mdash;</span></li>
+            <li><span class="bl-label">Drying of streams &amp; wells</span><span class="bl-track"><span class="bl-fill" style="--v:0%"></span></span><span class="bl-val">&mdash;</span></li>
+          </ul>
+          <p class="panel-note">Awaiting first survey window &mdash; bars will populate as data arrives.</p>
+        </div>
+
+        <!-- tradeoff + segment split -->
+        <div class="panel-2col">
+          <div class="panel">
+            <h3 class="panel-title">Growth sentiment</h3>
+            <p class="panel-sub">How residents feel about incoming growth</p>
+            <div class="donut" id="donut" role="img" aria-label="Growth sentiment donut chart, awaiting data">
+              <div class="donut-hole"><span>Awaiting<br />data</span></div>
+            </div>
+            <ul class="legend">
+              <li><span class="dot dot-a"></span>Welcome it</li>
+              <li><span class="dot dot-b"></span>Cautious</li>
+              <li><span class="dot dot-c"></span>Oppose it</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3 class="panel-title">Who&rsquo;s responding</h3>
+            <p class="panel-sub">Responses by stakeholder segment</p>
+            <ul class="barlist barlist-tight" id="segments">
+              <li><span class="bl-label">Residents</span><span class="bl-track"><span class="bl-fill bl-alt" style="--v:0%"></span></span><span class="bl-val">&mdash;</span></li>
+              <li><span class="bl-label">Irrigation users</span><span class="bl-track"><span class="bl-fill bl-alt" style="--v:0%"></span></span><span class="bl-val">&mdash;</span></li>
+              <li><span class="bl-label">Agriculture</span><span class="bl-track"><span class="bl-fill bl-alt" style="--v:0%"></span></span><span class="bl-val">&mdash;</span></li>
+              <li><span class="bl-label">Commercial</span><span class="bl-track"><span class="bl-fill bl-alt" style="--v:0%"></span></span><span class="bl-val">&mdash;</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────── SUPPLY STORY ─────────────── -->
+  <section id="supply" class="band band-deep">
+    <div class="wrap supply-grid">
+      <div>
+        <p class="section-eyebrow light">The foundation</p>
+        <h2 class="section-title light">New water, one time.<br />Used wisely, for generations.</h2>
+        <p class="section-lede light">
+          The Highline Canal Enclosure Project will conserve roughly 8,000 acre-feet of water
+          each year by eliminating evaporation and seepage. That water is the basis of this plan.
+          How it is shared between homes, farms, and future growth is exactly what the community
+          conversation will decide.
+        </p>
+      </div>
+      <ul class="supply-facts">
+        <li><span class="sf-num">8,000</span><span class="sf-lbl">acre-feet of conserved water, per year</span></li>
+        <li><span class="sf-num">2032</span><span class="sf-lbl">target year for delivery to Juab County</span></li>
+        <li><span class="sf-num">75 yr</span><span class="sf-lbl">planning horizon, through 2100</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ─────────────── PARTICIPATE ─────────────── -->
+  <section id="participate" class="band">
+    <div class="wrap participate">
+      <div class="part-copy">
+        <p class="section-eyebrow">Add your voice</p>
+        <h2 class="section-title">Every water user has a stake</h2>
+        <p class="section-lede">
+          Some surveys are open to everyone. Others go directly to irrigation companies and
+          large agricultural users, by invitation, so we can hear from the people whose
+          livelihoods depend most on this water.
+        </p>
+      </div>
+      <div class="part-cards">
+        <article class="part-card">
+          <h3>Residents &amp; businesses</h3>
+          <p>Open community survey. Two minutes, and it shapes the plan directly.</p>
+          <a class="btn btn-primary" href="#" data-survey="public">Take the survey</a>
+          <span class="part-meta">Public &middot; ESRI Survey123</span>
+        </article>
+        <article class="part-card part-card-alt">
+          <h3>Irrigation &amp; agriculture</h3>
+          <p>Invited water users receive a private link by email, or a paper survey at
+             district and company meetings.</p>
+          <a class="btn btn-ghost" href="#" data-survey="invite">Request an invite</a>
+          <span class="part-meta">By invitation &middot; results reported in aggregate</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <div class="foot-brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <p><strong>Juab County Water Supply Plan</strong><br />
+        A partnership of Central Utah Water Conservancy District, Jones&nbsp;&amp;&nbsp;DeMille
+        Engineering, and Sunrise Engineering.</p>
+    </div>
+    <div class="foot-links">
+      <a href="https://cuwcd.gov/" rel="noopener">CUWCD.gov</a>
+      <a href="#values">Our approach</a>
+      <a href="#participate">Participate</a>
+    </div>
+    <p class="foot-fine">
+      Public involvement led by Sunrise Engineering. Results shown in aggregate to protect
+      respondent privacy. This is a draft demonstration site.
+    </p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
