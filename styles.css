@@ -180,14 +180,18 @@ button:focus-visible,
 
 /* footer */
 .site-foot{background:var(--navy-2);color:#c8dcea;padding:56px 0 40px}
-.foot-inner{display:grid;gap:24px}
-.foot-brand{display:flex;flex-direction:column;gap:14px;align-items:flex-start;max-width:56ch}
+.foot-inner{display:grid;grid-template-columns:1.6fr .8fr 1.4fr;gap:48px;align-items:start}
+@media(max-width:860px){.foot-inner{grid-template-columns:1fr 1fr;gap:36px}}
+@media(max-width:560px){.foot-inner{grid-template-columns:1fr;gap:28px}}
+.foot-col-brand{max-width:none}
+.foot-h{font-family:var(--display);font-weight:700;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:#8fb0c4;margin-bottom:14px}
+.foot-brand{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
 .foot-brand p{font-size:.9rem;line-height:1.5}
 .foot-brand strong{color:#fff}
-.foot-links{display:flex;gap:24px;flex-wrap:wrap}
+.foot-links{display:flex;flex-direction:column;gap:12px}
 .foot-links a{color:var(--blue-lite);font-weight:600;font-size:.9rem}
 .foot-links a:hover{color:#fff}
-.foot-fine{font-size:.78rem;color:#6f8aa0;max-width:64ch;border-top:1px solid rgba(255,255,255,.12);padding-top:20px}
+.foot-fine{font-size:.8rem;color:#8fa8b8;line-height:1.55;margin-bottom:16px}
 .foot-tagline{font-family:var(--display);font-style:italic;font-weight:600;color:var(--green-ondark);font-size:1rem;margin-top:4px}
 
 /* official CUWCD logo images */
@@ -243,8 +247,8 @@ button:focus-visible,
 
 /* accessibility statement line in footer */
 .foot-a11y{
-  font-size:.78rem;color:#8fa8b8;max-width:64ch;margin-top:14px;
-  display:flex;align-items:center;gap:10px;flex-wrap:wrap;line-height:1.5;
+  font-size:.78rem;color:#8fa8b8;
+  display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap;line-height:1.5;
 }
 .foot-a11y a{color:var(--blue-lite);font-weight:600}
 .a11y-badge{
