@@ -42,7 +42,22 @@ body{font-family:var(--body);color:var(--ink);background:var(--paper);line-heigh
 .skip-link:focus{left:0}
 
 a{color:var(--blue);text-decoration:none}
-a:focus-visible,button:focus-visible{outline:3px solid var(--green);outline-offset:2px}
+/* high-contrast keyboard focus (WCAG 2.4.7) — double ring works on light and dark */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible{
+  outline:3px solid var(--navy);
+  outline-offset:2px;
+  box-shadow:0 0 0 6px rgba(122,182,72,.55);
+  border-radius:4px;
+}
+/* on dark bands, invert so the ring stays visible */
+.band-deep a:focus-visible,
+.band-deep button:focus-visible,
+.site-foot a:focus-visible{
+  outline-color:#fff;
+  box-shadow:0 0 0 6px rgba(122,182,72,.7);
+}
 
 .canal{position:fixed;left:38px;top:0;bottom:0;width:2px;z-index:0;background:linear-gradient(var(--blue-lite),transparent 40%,transparent 60%,var(--blue-lite));opacity:.22;pointer-events:none}
 @media(max-width:900px){.canal{display:none}}
