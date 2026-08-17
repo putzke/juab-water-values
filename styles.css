@@ -12,13 +12,14 @@
   --blue-lite:#009ddc;
   --blue-pale:#e7f1f8;
   --green:#61b33e;
-  --green-deep:#4d9130;
+  --green-deep:#3f7827;
+  --green-ondark:#82d050;
   --green-pale:#eef5e5;
 
   --paper:#ffffff;
   --paper-2:#f4f7fa;
   --ink:#1f2a33;
-  --ink-soft:#4a5964;
+  --ink-soft:#3d4a54;
   --line:#d5e0e8;
 
   --display:"Public Sans",system-ui,sans-serif;
@@ -82,11 +83,11 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--green);outline-offs
 .water-fill{position:absolute;left:0;right:0;bottom:0;height:52%;background:linear-gradient(var(--blue-lite),var(--blue));transition:height 1.6s cubic-bezier(.2,.7,.2,1)}
 .water-fill::before{content:"";position:absolute;top:-8px;left:0;right:0;height:12px;background:var(--blue-lite);opacity:.5;border-radius:50%}
 .new-supply{position:absolute;left:0;right:0;bottom:52%;height:0;background:repeating-linear-gradient(45deg,var(--green) 0 10px,var(--green-deep) 10px 20px);transition:height 1.6s cubic-bezier(.2,.7,.2,1) .4s;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.ns-tag{font-family:var(--mono);font-size:.6rem;line-height:1.2;color:#173a06;text-transform:uppercase;letter-spacing:.05em;padding:2px 6px;background:rgba(255,255,255,.82);border-radius:4px}
-.viz-label{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.68rem;color:var(--ink-soft);letter-spacing:.04em;padding:8px 2px}
-.viz-label-top{border-bottom:1px dashed var(--line)}
-.viz-label-bot{border-top:1px dashed var(--line)}
-.supply-viz figcaption{margin-top:16px;font-size:.86rem;color:var(--ink-soft);max-width:30ch;margin-inline:auto}
+.ns-tag{font-family:var(--mono);font-size:.64rem;font-weight:700;line-height:1.2;color:#12290a;text-transform:uppercase;letter-spacing:.05em;padding:3px 8px;background:rgba(255,255,255,.92);border-radius:4px}
+.viz-label{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.74rem;font-weight:700;color:var(--navy);letter-spacing:.03em;padding:8px 10px;background:rgba(255,255,255,.82);border-radius:6px;margin:4px 0}
+.viz-label-top{}
+.viz-label-bot{}
+.supply-viz figcaption{margin-top:16px;font-size:.95rem;line-height:1.5;color:var(--ink);max-width:32ch;margin-inline:auto;background:rgba(255,255,255,.86);padding:12px 16px;border-radius:10px}
 
 /* bands */
 .band{padding:84px 0;position:relative}
@@ -116,7 +117,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--green);outline-offs
 .stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 @media(max-width:640px){.stat-row{grid-template-columns:1fr}}
 .stat{background:var(--navy);color:#fff;border-radius:var(--r);padding:28px 26px;text-align:left}
-.stat-num{font-family:var(--display);font-weight:800;font-size:2.8rem;line-height:1;display:block;color:var(--green)}
+.stat-num{font-family:var(--display);font-weight:800;font-size:2.8rem;line-height:1;display:block;color:var(--green-ondark)}
 .stat-lbl{font-size:.9rem;color:#c8dcea;margin-top:8px;display:block}
 .panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:28px}
 .panel-title{font-family:var(--display);font-weight:700;font-size:1.24rem;color:var(--navy);margin-bottom:4px}
@@ -147,7 +148,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--green);outline-offs
 @media(max-width:800px){.supply-grid{grid-template-columns:1fr;gap:36px}}
 .supply-facts{list-style:none;display:grid;gap:18px}
 .supply-facts li{display:flex;align-items:baseline;gap:18px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.16)}
-.sf-num{font-family:var(--display);font-weight:800;font-size:2.2rem;color:var(--green);flex:none;min-width:4.4ch}
+.sf-num{font-family:var(--display);font-weight:800;font-size:2.2rem;color:var(--green-ondark);flex:none;min-width:4.4ch}
 .sf-lbl{font-size:.98rem;color:#c8dcea}
 
 /* participate */
@@ -172,7 +173,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--green);outline-offs
 .foot-links a{color:var(--blue-lite);font-weight:600;font-size:.9rem}
 .foot-links a:hover{color:#fff}
 .foot-fine{font-size:.78rem;color:#6f8aa0;max-width:64ch;border-top:1px solid rgba(255,255,255,.12);padding-top:20px}
-.foot-tagline{font-family:var(--display);font-style:italic;font-weight:600;color:var(--green);font-size:1rem;margin-top:4px}
+.foot-tagline{font-family:var(--display);font-style:italic;font-weight:600;color:var(--green-ondark);font-size:1rem;margin-top:4px}
 
 /* official CUWCD logo images */
 .brand-logo{height:44px;width:auto;display:block}
