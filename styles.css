@@ -240,3 +240,16 @@ button:focus-visible,
 .photo-credit a{color:#bfe0ef;text-decoration:underline}
 .band-sage .photo-credit{background:rgba(27,58,91,.72)}
 @media(max-width:600px){.photo-credit{font-size:.56rem;right:8px;bottom:8px}}
+
+/* accessibility statement line in footer */
+.foot-a11y{
+  font-size:.78rem;color:#8fa8b8;max-width:64ch;margin-top:14px;
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;line-height:1.5;
+}
+.foot-a11y a{color:var(--blue-lite);font-weight:600}
+.a11y-badge{
+  display:inline-flex;align-items:center;flex:none;
+  font-family:var(--mono);font-size:.66rem;font-weight:700;letter-spacing:.04em;
+  color:#0b2033;background:var(--green-ondark);
+  padding:4px 9px;border-radius:5px;
+}
