@@ -193,11 +193,17 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--green);outline-offs
 
 /* Hero: Mount Nebo over Juab Valley, light wash so navy text stays readable */
 .hero.photo-bg{background-image:url('https://juab.is/wp-content/uploads/2023/11/mount-nebo.jpg')}
-.hero.photo-bg::before{background:linear-gradient(rgba(255,255,255,.66),rgba(255,255,255,.55))}
-/* keep hero text legible over the more-visible photo */
-.hero.photo-bg h1{text-shadow:0 1px 10px rgba(255,255,255,.65)}
-.hero.photo-bg .lede{text-shadow:0 1px 8px rgba(255,255,255,.7)}
-.hero.photo-bg .eyebrow{text-shadow:0 1px 6px rgba(255,255,255,.7)}
+.hero.photo-bg::before{background:linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.42))}
+/* readability panel behind hero text (keeps photo vivid elsewhere) */
+.hero.photo-bg .hero-copy{
+  background:linear-gradient(rgba(255,255,255,.82),rgba(255,255,255,.72));
+  backdrop-filter:blur(3px);
+  padding:32px 34px;border-radius:16px;
+  box-shadow:0 20px 50px -30px rgba(18,41,63,.5);
+}
+/* darken the body copy slightly for extra contrast */
+.hero.photo-bg .lede{color:#33414c}
+@media(max-width:860px){.hero.photo-bg .hero-copy{padding:26px 24px}}
 
 
 /* Values band: Burraston Ponds (spring-fed water), light green wash */
