@@ -1,5 +1,5 @@
 {
-  "_comment": "Update this file to publish new survey results. Set stats, then concerns/segments as arrays of {label, value(percent)}, and growth as {welcome,cautious,oppose} percentages. Delete this file (or leave empty) to show placeholders. This is SAMPLE data for demonstration.",
+  "_comment": "Update this file to publish new survey results. stats = [responses, groups engaged, events]. concerns/segments are arrays of {label, value(percent)}. water20yr = {agree, neither, disagree} percentages (Survey Q A4), should total 100. Delete this file or leave values at 0 to show 'awaiting data' placeholders. This is SAMPLE data for demonstration.",
   "_status": "SAMPLE DEMONSTRATION DATA — replace when first survey window closes",
   "stats": [0, 0, 1],
   "concerns": [
@@ -15,5 +15,5 @@
     { "label": "Agriculture", "value": 0 },
     { "label": "Commercial", "value": 0 }
   ],
-  "growth": { "welcome": 0, "cautious": 0, "oppose": 0 }
+  "water20yr": { "agree": 0, "neither": 0, "disagree": 0 }
 }
