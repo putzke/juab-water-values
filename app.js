@@ -83,15 +83,16 @@
     fillBars("concerns", d.concerns);
     fillBars("segments", d.segments);
 
-    // donut (growth sentiment) — {welcome, cautious, oppose} percentages
-    if (d.growth) {
-      const g = d.growth, donut = document.getElementById("donut");
+    // donut (A4: enough water in 20 years?) — {agree, neither, disagree} percentages
+    if (d.water20yr || d.growth) {
+      const g = d.water20yr || d.growth;
+      const donut = document.getElementById("donut");
       if (donut) {
-        const a = g.welcome || 0, b = g.cautious || 0;
+        const a = g.agree || 0, b = g.neither || 0;
         donut.style.background =
-          `conic-gradient(var(--canal) 0 ${a}%, var(--wheat) ${a}% ${a + b}%, var(--earth) ${a + b}% 100%)`;
+          `conic-gradient(var(--blue) 0 ${a}%, var(--green) ${a}% ${a + b}%, var(--navy) ${a + b}% 100%)`;
         const hole = donut.querySelector(".donut-hole");
-        if (hole) hole.innerHTML = `<span><strong>${a}%</strong><br>welcome</span>`;
+        if (hole) hole.innerHTML = `<span><strong>${a}%</strong><br>agree</span>`;
       }
     }
   }
