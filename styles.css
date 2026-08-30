@@ -261,3 +261,6 @@ button:focus-visible,
   color:#0b2033;background:var(--green-ondark);
   padding:4px 9px;border-radius:5px;
 }
+
+/* illustrative/not-to-scale disclaimer under the hero water graphic */
+.viz-disclaimer{display:block;margin-top:8px;font-size:.72rem;line-height:1.4;font-style:italic;color:var(--ink-soft);border-top:1px solid var(--line);padding-top:8px}
