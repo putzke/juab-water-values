@@ -123,7 +123,7 @@
       const kind = btn.dataset.survey;
       // Replace these with real Survey123 links / invite flow when live:
       const urls = {
-        public: "https://arcg.is/8PbDi0", // e.g. "https://survey123.arcgis.com/share/PUBLIC_ID"
+        public: "https://juabwater.com/survey", // branded path -> survey/index.html -> arcg.is/8PbDi0 -> Survey123
         invite: ""  // invite-model handled by email magic-link
       };
       if (urls[kind]) {
