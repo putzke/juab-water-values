@@ -171,9 +171,9 @@ button:focus-visible,
 .sf-lbl{font-size:.98rem;color:#c8dcea}
 
 /* participate */
-.participate{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
-@media(max-width:820px){.participate{grid-template-columns:1fr;gap:32px}}
-.part-cards{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+.participate{display:block}
+.part-copy{max-width:66ch;margin-bottom:40px}
+.part-cards{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
 @media(max-width:560px){.part-cards{grid-template-columns:1fr}}
 .part-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);border-top:4px solid var(--blue);padding:30px 26px;display:flex;flex-direction:column;gap:16px}
 .part-card-alt{background:var(--green-pale);border-color:#cfe0b9;border-top-color:var(--green)}
