@@ -131,7 +131,7 @@
       } else {
         alert(kind === "public"
           ? "The community survey link will appear here once the survey window opens."
-          : "To request an invited survey link, contact the project team at jputzke@sunrise-eng.com.");
+          : "To request an invited survey link, email the project team at info@juabwater.com.\n\nPlease include:\n- Which group you belong to: City/County Staff, Secondary/Irrigation District Users, or Agricultural Producers/Landowners\n- A phone number where we can reach you, so we can confirm the right survey for you.");
       }
     });
   });
