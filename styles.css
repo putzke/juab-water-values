@@ -62,6 +62,11 @@ button:focus-visible,
 .canal{position:fixed;left:38px;top:0;bottom:0;width:2px;z-index:0;background:linear-gradient(var(--blue-lite),transparent 40%,transparent 60%,var(--blue-lite));opacity:.22;pointer-events:none}
 @media(max-width:900px){.canal{display:none}}
 
+/* development notice banner */
+.dev-banner{background:#fff4d6;color:#6b4e00;border-bottom:1px solid #f0d98a;text-align:center;padding:8px 16px;font-size:.82rem;line-height:1.4}
+.dev-banner strong{color:#8a5a00;font-weight:700}
+.dev-banner-inner{display:inline-block;max-width:70ch}
+
 /* header */
 .site-head{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:2px solid var(--navy)}
 .head-inner{display:flex;align-items:center;justify-content:space-between;height:96px}
