@@ -96,6 +96,7 @@ button:focus-visible,
 .btn-primary:hover{background:var(--blue);transform:translateY(-1px)}
 .btn-ghost{border-color:var(--navy);color:var(--navy);background:transparent}
 .btn-ghost:hover{background:var(--navy);color:#fff}
+.btn:disabled,.btn[disabled]{background:#9aa7b1;border-color:#9aa7b1;color:#eef2f5;cursor:not-allowed;opacity:.7;pointer-events:none;transform:none;box-shadow:none}
 
 /* supply viz */
 .supply-viz{text-align:center}
@@ -186,6 +187,7 @@ button:focus-visible,
 .part-card p{font-size:.94rem;color:var(--ink-soft);line-height:1.55;margin:0}
 .part-card .btn{align-self:flex-start;margin-top:6px}
 .part-meta{font-family:var(--body);font-size:.7rem;color:var(--ink-soft);letter-spacing:.03em;text-transform:uppercase;margin-top:2px}
+.survey-note{font-size:.8rem;line-height:1.4;color:#8a5a00;background:#fff4d6;border:1px solid #f0d98a;border-radius:6px;padding:7px 10px;margin:2px 0 0}
 
 /* footer */
 .site-foot{background:var(--navy-2);color:#c8dcea;padding:56px 0 40px}
