@@ -237,8 +237,8 @@ button:focus-visible,
 @media(max-width:860px){.hero.photo-bg .hero-copy{padding:26px 24px}}
 
 
-/* Values band: Burraston Ponds (spring-fed water), light green wash */
-.band-sage.photo-bg{background-image:url('https://juab.is/wp-content/uploads/2023/11/Burraston-Ponds.jpg')}
+/* Values band: river/reflection (Bruce Wilson, juab.is), light green wash */
+.band-sage.photo-bg{background-image:url('assets/values-river-couple.jpg')}
 .band-sage.photo-bg::before{background:linear-gradient(rgba(238,245,229,.90),rgba(238,245,229,.82))}
 
 /* Supply band: Yuba State Park reservoir, dark navy wash so white text pops */
