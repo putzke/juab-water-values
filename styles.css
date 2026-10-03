@@ -211,19 +211,19 @@ button:focus-visible,
 @media(max-width:720px){.brand-logo{height:46px}}
 
 /* ============================================================
-   DEMO PHOTO BACKGROUNDS — permission pending
-   Images referenced directly from juab.is (Juab County Tourism).
-   Each section carries a visible credit label. To remove after
-   permissions are secured: delete the .photo-bg rules below and
-   the .photo-credit spans from index.html.
+   PHOTO BACKGROUNDS — permission secured (Juab County Tourism)
+   Hero + Values are hosted locally in assets/ (Bruce Wilson photos,
+   clickable juab.is logo badge in corner -> https://juab.is).
+   Supply band still hotlinks Yuba from juab.is pending a local
+   replacement.
    ============================================================ */
 
 .photo-bg{position:relative;background-size:cover;background-position:center;background-repeat:no-repeat}
 .photo-bg::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none}
 .photo-bg > *{position:relative;z-index:1}
 
-/* Hero: Mount Nebo over Juab Valley, light wash so navy text stays readable */
-.hero.photo-bg{background-image:url('https://juab.is/wp-content/uploads/2023/11/mount-nebo.jpg')}
+/* Hero: red rock canyon couple (Bruce Wilson, juab.is), light wash so navy text stays readable */
+.hero.photo-bg{background-image:url('assets/hero-redrock-couple.jpg')}
 .hero.photo-bg::before{background:linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.42))}
 /* readability panel behind hero text (keeps photo vivid elsewhere) */
 .hero.photo-bg .hero-copy{
@@ -248,11 +248,18 @@ button:focus-visible,
 /* Credit label */
 .photo-credit{
   position:absolute;right:12px;bottom:10px;z-index:2;
+  display:inline-flex;align-items:center;gap:8px;
   font-family:var(--body);font-size:.62rem;letter-spacing:.02em;
-  background:rgba(0,0,0,.55);color:#fff;padding:4px 9px;border-radius:5px;
-  max-width:80vw;line-height:1.3;
+  background:rgba(0,0,0,.72);color:#fff;padding:5px 10px;border-radius:6px;
+  max-width:80vw;line-height:1.3;text-decoration:none;
 }
+/* whole badge is a link to juab.is on hero/values */
+a.photo-credit{cursor:pointer}
+a.photo-credit:hover{text-decoration:underline;background:rgba(0,0,0,.82)}
+.band-sage a.photo-credit:hover{background:rgba(27,58,91,.85)}
 .photo-credit a{color:#bfe0ef;text-decoration:underline}
+/* juab.is logo badge sitting inside the credit pill */
+.credit-logo{flex:none;height:18px;width:auto;display:block}
 .band-sage .photo-credit{background:rgba(27,58,91,.72)}
 @media(max-width:600px){.photo-credit{font-size:.56rem;right:8px;bottom:8px}}
 
