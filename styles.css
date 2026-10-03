@@ -214,8 +214,8 @@ button:focus-visible,
    PHOTO BACKGROUNDS — permission secured (Juab County Tourism)
    Hero + Values are hosted locally in assets/ (Bruce Wilson photos,
    clickable juab.is logo badge in corner -> https://juab.is).
-   Supply band still hotlinks Yuba from juab.is pending a local
-   replacement.
+   Supply band photo removed for now (solid navy backdrop) until a
+   replacement photo is chosen.
    ============================================================ */
 
 .photo-bg{position:relative;background-size:cover;background-position:center;background-repeat:no-repeat}
@@ -241,9 +241,7 @@ button:focus-visible,
 .band-sage.photo-bg{background-image:url('assets/values-river-couple.jpg')}
 .band-sage.photo-bg::before{background:linear-gradient(rgba(238,245,229,.90),rgba(238,245,229,.82))}
 
-/* Supply band: Yuba State Park reservoir, dark navy wash so white text pops */
-.band-deep.photo-bg{background-image:url('https://juab.is/wp-content/uploads/2023/11/YubaStatePark2.jpg')}
-.band-deep.photo-bg::before{background:linear-gradient(rgba(27,58,91,.86),rgba(18,41,63,.90))}
+/* Supply band: photo removed for now — solid navy (.band-deep) backdrop until a replacement is chosen */
 
 /* Credit label */
 .photo-credit{
